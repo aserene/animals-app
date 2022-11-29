@@ -1,0 +1,18 @@
+<%- include("../partials/head.ejs") %>
+<body>
+    <header class="top">
+        <div class="header"><h1>Animals</h1>
+        <h3><a href="/animals/new"><button>Add an Animal</button></a></h3></div>
+    </header>
+    <main>
+        <div class="container">
+            
+            <% for(let i = 0; i < animals.length; i++) { %>
+                <div class="card">
+                    <header><a href="/animals/<%=animals[i]._id%>"><h2><%=animals[i].species%></h2></a></header>
+                </div>
+            <% } %>
+        </div>
+      </main>
+</body>
+</html>
