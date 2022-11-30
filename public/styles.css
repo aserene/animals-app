@@ -1,3 +1,66 @@
-* {
-    background-color: rgb(27, 185, 27);
+body {
+    background-image: url(https://img.freepik.com/free-vector/game-landscape-with-tropical-plants_105738-749.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.top {
+    display: flex;
+    justify-content: center;
+}
+button {
+    border-radius: 5px;
+    background-color: white;
+    border-color: black;
+    margin-left: 6px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 150px;
+    justify-content: center;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: beige;
+    text-align: center;
+}
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    padding: 10px;
+    background-color: beige;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.edit {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 400px;
+    justify-content: center;
+    margin: auto;
+    background-color: beige;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+.new {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 400px;
+    justify-content: center;
+    margin: auto;
+    background-color: beige;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 5px;
+}
+.add {
+    text-align: center;
 }

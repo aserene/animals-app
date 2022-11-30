@@ -1,9 +1,9 @@
 <%- include("../partials/head.ejs") %>
 <body>
     <main>
-    <div>
+    <div class="edit">
       <form action="/animals/<%=animal._id %>?_method=PUT" method="post">
-        <legend>Edit <%=animal.species%></legend>
+        <h2>Edit <%=animal.species%></h2>
         <fieldset>
           <label>
             Species:<input
@@ -32,8 +32,8 @@
           </label>
         </fieldset>
         <input type="submit" value="Update <%=animal.species%>"/>
+        <a href="/animals"><button>Return without changing</button></a>
     </form>
-    <a href="/animals"><button>Return without changing</button></a>
     </div>
   </main>
 </body>

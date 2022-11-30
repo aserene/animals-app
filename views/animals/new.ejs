@@ -1,7 +1,8 @@
 <%- include("../partials/head.ejs") %>
 <body>
     <main>
-        <div>
+        <h1 class="add">Add An Animal</h1>
+        <div class="new">
             <form action="/animals" method="post">
                 <fieldset>
                     <label>
@@ -29,8 +30,8 @@
                     </label>
                   </fieldset>
                   <input type="submit" value="Add new animal"/>
+                  <a href="/animals"><button>Back to Main Page</button></a>
             </form>
-            <a href="/animals"><button>Back to Main Page</button></a>
         </div>
     </main>
 </body>
